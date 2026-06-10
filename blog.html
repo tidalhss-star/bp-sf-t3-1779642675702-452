@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>화곡 셔츠룸 | 브로들의 주식투자 블로그</title>
+    <meta name="description" content="주식투자로 번 돈, 화곡 셔츠룸에서 털어라. 브로들을 위한 리얼한 셔츠룸 후기와 투자 이야기. 전화 010-6279-0862">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 주식투자 브로, 셔츠룸 블로그, 화곡동 유흥, 주식으로 번돈">
+    <link rel="canonical" href="https://sf-t3-1779642675702-452.vercel.app/blog">
+    <meta property="og:title" content="화곡 셔츠룸 블로그 | 브로들의 전장">
+    <meta property="og:description" content="주식으로 벌었으면 화곡 셔츠룸에서 쏴라. 거친 브로들의 리얼리티, 블로그에서 확인.">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0b0b0b;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #121212;
+            border: 3px solid #ff0055;
+            padding: 20px;
+            box-shadow: 10px 10px 0 #00ffff;
+        }
+        section {
+            margin-bottom: 40px;
+            border-bottom: 1px dashed #ff0055;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 3.2rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #00ffff;
+            text-shadow: 4px 4px 0 #ff0055;
+            margin-bottom: 20px;
+            word-break: break-word;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #ffcc00;
+            border-left: 8px solid #ff0055;
+            padding-left: 15px;
+            margin: 30px 0 20px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #ff6600;
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+        p, li, blockquote {
+            font-size: 1.1rem;
+            color: #d0d0d0;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #ff0055;
+            text-decoration: underline wavy;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #00ffff;
+            text-decoration: none;
+            background: #ff0055;
+            padding: 2px 6px;
+        }
+        .brutal-box {
+            background: #1a1a1a;
+            border: 4px solid #ff0055;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0 #00ffff;
+        }
+        .brutal-box:nth-child(even) {
+            background: #111;
+            border-color: #00ffff;
+            box-shadow: 6px 6px 0 #ff0055;
+        }
+        .accent-border {
+            border-bottom: 6px solid #ff0055;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        header {
+            background: #0f0f0f;
+            padding: 15px 0;
+            border-bottom: 4px solid #ff0055;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff0055;
+            text-shadow: 2px 2px 0 #00ffff;
+            letter-spacing: 3px;
+        }
+        /* navigation */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            color: #00ffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+            transition: 0.2s;
+        }
+        nav a:hover {
+            border-color: #ff0055;
+            background: #000;
+            color: #ffcc00;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #ff0055;
+            background: none;
+            border: 2px solid #ff0055;
+            padding: 5px 12px;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff0055;
+            color: #000 !important;
+            font-weight: bold;
+            padding: 8px 18px;
+            border: 3px solid #00ffff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            margin-left: 10px;
+            box-shadow: 4px 4px 0 #fff;
+        }
+        .tel-link:hover {
+            background: #00ffff;
+            border-color: #ff0055;
+            color: #000 !important;
+            box-shadow: none;
+        }
+        /* responsive 768 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                box-shadow: 5px 5px 0 #00ffff;
+            }
+            h1 {
+                font-size: 2.2rem;
+                letter-spacing: 3px;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background: #0a0a0a;
+                padding: 15px;
+                border: 2px solid #ff0055;
+                margin-top: 10px;
+            }
+            nav.show {
+                display: flex;
+            }
+            .hamburger {
+                display: inline-block;
+            }
+            .tel-link {
+                margin: 10px 0 0;
+                display: inline-block;
+                width: fit-content;
+            }
+            .brutal-box {
+                padding: 15px;
+            }
+        }
+        /* blog specific */
+        .blog-card {
+            background: #1a1a1a;
+            border-left: 10px solid #ff0055;
+            padding: 20px;
+            margin: 30px 0;
+            box-shadow: 8px 8px 0 #00ffff;
+        }
+        .blog-card h2 {
+            border-left: none;
+            margin-top: 0;
+        }
+        .blog-meta {
+            color: #ff6600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-bottom: 1px dashed #ff0055;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        blockquote {
+            background: #0f0f0f;
+            border-left: 8px solid #ffcc00;
+            padding: 15px;
+            font-style: italic;
+            color: #ffcc00;
+            margin: 20px 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #ff0055;
+            color: #000;
+            padding: 2px 12px;
+            font-weight: bold;
+            margin-right: 8px;
+            border: 2px solid #00ffff;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 6px solid #ff0055;
+            padding: 20px 0;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">화곡 셔츠룸</div>
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+        <nav id="mainNav">
+            <a href="/">홈</a>
+            <a href="/about">어바웃</a>
+            <a href="/blog">블로그</a>
+            <a href="/contact">컨택</a>
+            <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>브로들의 블로그</h1>
+            <p class="accent-border">주식투자로 번 돈, 여기서 털어라. 리얼 브로들의 전장.</p>
+            <p>화곡 셔츠룸, 마포에서 가장 거친 셔츠룸. 주식으로 벌어들인 수익, 그냥 은행에 묻어두기엔 아깝지 않냐? 브로들을 위한 리얼한 공간, 여기 블로그에서 생생한 후기와 투자 이야기를 털어놓는다. 전화는 010-6279-0862, 지금 바로.</p>
+        </section>
+
+        <!-- 블로그 메인 글 1편 (정보성 글) -->
+        <div class="blog-card">
+            <div class="blog-meta">
+                <span class="tag">주식투자</span>
+                <span class="tag">셔츠룸</span>
+                <span>2025.04.20</span>
+                <span>| by 브로</span>
+            </div>
+            <h2>“주식으로 3억 벌고 화곡 셔츠룸에서 다 털었다”</h2>
+            <p><strong>리얼 브로의 투자 후기 & 셔츠룸 사용법</strong></p>
+            <p>주식으로 3억? 거짓말 같지만 진짜다. 나는 브로, 마포에서 태어나 화곡동을 주무대로 삼는 사나이. 지난 3개월간 반도체와 2차전지로 3억을 만들었다. 그리고 그 돈, 화곡 셔츠룸에서 불태웠다. 이유가 뭘까? 주식으로 번 돈은 ‘더러운 돈’이 아니라 ‘피땀’이다. 그 피땀을 가장 거칠게 쏠 수 있는 곳, 바로 화곡 셔츠룸이다.</p>
+
+            <blockquote>
+                “주식으로 벌었다고? 그럼 쏴야지. 화곡 셔츠룸은 브로들의 전장이다. 여기서 돈을 쓰는 건 투자다. 인생에 대한 투자.”
+            </blockquote>
+
+            <h3>왜 화곡 셔츠룸인가?</h3>
+            <p>마포에는 수많은 셔츠룸이 있지만, 화곡 셔츠룸은 분위기 자체가 다르다. 거친 브루탈리즘 감성, 흐트러짐 없는 서비스, 그리고 진짜 ‘형님’ 문화. 주식으로 스트레스받은 브로들이 모여서 시원하게 돈을 쓰고, 서로의 투자 전략을 공유한다. 여기는 그냥 유흥업소가 아니다. 브로들의 2차 전장이다.</p>
+
+            <h3>내가 경험한 화곡 셔츠룸 A to Z</h3>
+            <p>첫 방문, 입구부터 느껴지는 압도적인 분위기. 어두운 조명, 강렬한 레드와 네온. 마치 주식 차트가 폭등하는 순간 같았다. 안으로 들어서자 마주친 브로들. 모두 주식 얘기, 수익 인증, 그리고 다음 전략. 나도 가세했다. 하이볼 한잔에 셔츠 하나씩 벗어던지는 분위기. 여기서 중요한 건 ‘진짜’임을 증명하는 거다. 돈이 많다고 무시받는 곳이 아니다. 오히려 주식으로 번 돈을 인정받고, 그 에너지를 같이 쓰는 곳이다.</p>
+
+            <p>셔츠룸의 퀄리티? 말이 필요 없다. 마포에서 가장 핫한 곳답게 아가씨들도, 시스템도 최상. 하지만 내가 진짜 추천하는 건 ‘분위기’다. 거친 듯 세련된, 투자자들의 자존심을 긁어주는 그 공간. 주식으로 10% 수익 냈다면, 여기서 10%를 써라. 인생의 수익률이 올라간다.</p>
+
+            <h3>브로가 전하는 꿀팁</h3>
+            <p>화곡 셔츠룸 갈 때, 꼭 전화하고 가라. 010-6279-0862. 이유는? 예약 없이 가면 기다려야 한다. 브로들 사이에서 이미 입소문 난 곳이라 주말엔 거의 만석. 그리고 현금을 많이 가져가라. 카드보다 현금이 더 거칠게 느껴진다. 셔츠룸에서 현금으로 터는 그 손맛, 주식 수익 실현하는 느낌이랑 비슷하다.</p>
+
+            <p>또 하나, 주식 이야기를 할 준비를 하고 가라. 여기 브로들은 모두 투자자다. 삼성전자, 테슬라, 비트코인까지. 모르면 바보 된다. 하지만 걱정 마라. 모르면 가르쳐준다. 형님들이 다 알려준다. 그게 화곡 셔츠룸의 매너다.</p>
+
+            <div class="brutal-box">
+                <p><strong>🔥 결론: 주식으로 번 돈, 화곡 셔츠룸에서 인생에 투자하라. 전화 010-6279-0862</strong></p>
+                <p>주식 계좌에 숫자만 늘어난다고 인생이 바뀌나? 그 돈으로 진짜 경험을 사라. 화곡 셔츠룸, 마포 브로들의 전장. 여기서 너의 투자는 완성된다. 지금 바로 전화해라. 형님이 기다린다.</p>
+            </div>
+        </div>
+
+        <!-- 추가 정보성 블록 (FAQ 형식) -->
+        <section>
+            <h2>브로들이 묻는다</h2>
+            <div class="brutal-box">
+                <h3>❓ 주식 초보인데 가도 되나?</h3>
+                <p>당연히 돼. 오히려 초보일수록 와라. 형들이 주식 투자법부터 셔츠룸 매너까지 다 가르쳐준다. 단, 겸손해야 한다. 거친 브로들의 세계지만 기본은 있다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>❓ 화곡 셔츠룸 비용은?</h3>
+                <p>마포 평균보다 살짝 높지만, 그만큼 퀄리티가 다르다. 주식 수익의 10%는 기본으로 써야 브로 대접받는다. 010-6279-0862로 물어보면 자세히 알려준다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>❓ 여성도 방문 가능?</h3>
+                <p>이곳은 브로들의 전장. 기본적으로 남성 위주지만, 여성 브로도 환영한다. 단, 주식과 셔츠룸 문화를 이해하는 진정한 브로여야 한다.</p>
+            </div>
+        </section>
+
+        <!-- 추가 블로그 카드 (정보성 2) -->
+        <div class="blog-card">
+            <div class="blog-meta">
+                <span class="tag">셔츠룸 팁</span>
+                <span class="tag">마포</span>
+                <span>2025.04.18</span>
+                <span>| by 형님</span>
+            </div>
+            <h2>화곡 셔츠룸에서 200% 즐기는 법</h2>
+            <p>1. 전화 예약은 필수 (010-6279-0862)<br>
+            2. 현금을 두둑이 챙겨라. 카드는 찌질해 보인다.<br>
+            3. 주식 이야기를 준비해라. 삼전, 에코프로, 엔비디아 정도는 기본.<br>
+            4. 셔츠는 하얀색이 가장 무쌍하다. 검은색은 브로들의 암묵적 룰.<br>
+            5. 인사는 크게, 웃음은 거칠게. 그러면 너도 진짜 브로.</p>
+            <p>
+</body>
+</html>

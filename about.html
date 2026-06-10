@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>화곡 셔츠룸 | 마포 주식투자 브로들의 정보 창고</title>
+    <meta name="description" content="주식으로 번 돈, 어디 쓸지 고민이면? 화곡 셔츠룸에서 깔끔하게 털어라. 브로들이 직접 검증한 상세 정보와 지역 꿀팁. 전화 010-6279-0862">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 주식투자, 브로, 화곡동, 셔츠룸 추천, 마포 유흥, 정보">
+    <link rel="canonical" href="https://sf-t3-1779642675702-452.vercel.app/info">
+    <meta property="og:title" content="화곡 셔츠룸 | 마포 주식투자 브로들의 정보 창고">
+    <meta property="og:description" content="주식으로 벌었으면 화곡 셔츠룸에서 쏴라. 거친 브로들의 리얼리티 정보.">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            padding: 20px;
+            border: 3px solid #ff0055;
+            background: rgba(10, 10, 10, 0.95);
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ff0055;
+            letter-spacing: 6px;
+            text-shadow: 4px 4px 0 #00ffff, 8px 8px 0 #0a0a0a;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #00ffff;
+            letter-spacing: 4px;
+            border-left: 8px solid #ff0055;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff0055;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        p, li, blockquote {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            border-bottom: 2px solid #ff0055;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #ff0055;
+            border-bottom-color: #00ffff;
+            background: rgba(255, 0, 85, 0.1);
+        }
+        .brutal-box {
+            background: #111;
+            border: 4px solid #ff0055;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 10px 10px 0 #00ffff;
+            transition: all 0.2s ease;
+        }
+        .brutal-box:nth-child(even) {
+            border-color: #00ffff;
+            box-shadow: 10px 10px 0 #ff0055;
+        }
+        .accent-border {
+            border-left: 10px solid #ff0055;
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+        header {
+            background: #0a0a0a;
+            padding: 20px 0;
+            border-bottom: 4px solid #ff0055;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 0 #ff0055;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: none;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #ff0055;
+            color: #0a0a0a;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; letter-spacing: 3px; }
+            h2 { font-size: 1.8rem; }
+            .container { padding: 10px; }
+            nav { flex-direction: column; gap: 10px; }
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+                color: #ff0055;
+                font-size: 2rem;
+            }
+            nav {
+                display: none;
+                flex-direction: column;
+                background: #0a0a0a;
+                padding: 20px;
+                border: 3px solid #ff0055;
+            }
+            nav.active {
+                display: flex;
+            }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff0055;
+            color: #0a0a0a;
+            padding: 15px 30px;
+            font-weight: 900;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            border: 4px solid #00ffff;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: #00ffff;
+            border-color: #ff0055;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 4px solid #ff0055;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">화곡 셔츠룸</div>
+            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">☰</div>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/review">리뷰</a>
+                <a href="/location">위치</a>
+                <a href="tel:01062790862" class="tel-link">전화걸기</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h1>정보</h1>
+            <p class="accent-border">주식으로 번 돈, 여기서 털어라. <br>브로들이 직접 발로 뛰고 입으로 확인한 화곡 셔츠룸의 모든 것.</p>
+        </section>
+
+        <section>
+            <h2>왜 화곡 셔츠룸인가?</h2>
+            <div class="brutal-box">
+                <h3>주식 브로들의 성지</h3>
+                <p>마포에서 가장 핫한 셔츠룸. 주식투자로 번 돈을 가장 시원하게 쓰는 방법. 여기 오면 다 알게 된다. 왜 브로들이 여기만 찾는지.</p>
+                <p>화곡동의 거친 에너지, 그걸 그대로 담은 공간. 가짜 없고, 꼰대 없는 리얼한 전장.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>가격? 퀄리티? 둘 다 챙겼다</h3>
+                <p>주식 수익률만큼 확실한 가성비. 다른 데서 2배 주고도 못 느끼는 분위기를 여기서는 기본으로 깐다.</p>
+                <p>브로들이 직접 테스트한 결과: 가격 대비 만족도 200%.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>상세 정보</h2>
+            <div class="brutal-box">
+                <h3>운영 시간</h3>
+                <p>매일 20:00 ~ 05:00 (주말 및 공휴일 변동 있음)</p>
+                <p>브로들이 모이는 시간: 보통 22시 이후가 핫타임. 주식장 끝나고 오면 딱이다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>이용 가격</h3>
+                <p>기본: 20만원대부터 (주류 포함)</p>
+                <p>VIP: 50만원대 (브로들 전용 프리미엄 서비스)</p>
+                <p>주식 수익률에 따라 업그레이드 필수. 여기서 아끼면 주식도 못 번다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>서비스 구성</h3>
+                <p>셔츠룸 기본 + 브로들만을 위한 스페셜 코스</p>
+                <p>입장부터 퇴장까지, 모든 게 거칠고 직설적이다. 가식 없는 서비스가 진짜다.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>지역 시그널: 마포 & 화곡</h2>
+            <div class="accent-border">
+                <p>마포, 화곡동. 이 동네는 다르다. 주식 투자자들이 모이는 이유가 있다. 여기서 성공한 브로들은 다 여기로 온다.</p>
+                <p>화곡 셔츠룸은 그 중심에 있다. 지역 맛집, 핫플, 모든 게 연결되어 있다. 한 번 오면 네트워크가 만들어진다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>주변 꿀팁</h3>
+                <p>주차: 셔츠룸 전용 주차장 있음 (브로들 우선)</p>
+                <p>근처 맛집: 화곡동 닭한마리, 마포 돼지갈비 — 주식 얘기하며 먹기 좋은 곳</p>
+                <p>교통: 지하철 5호선 화곡역 도보 5분, 버스 노선 다양</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>FAQ — 브로들이 묻는다</h2>
+            <div class="brutal-box">
+                <h3>주식 얘기해도 되나?</h3>
+                <p>당연하다. 여기 오는 이유가 그거다. 오히려 주식 얘기 안 하면 어색하다. 브로들끼리 종목 토론, 수익 인증, 손실 위로 다 된다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>처음인데 괜찮나?</h3>
+                <p>첫 방문이면 더 환영이다. 브로들이 다 알려준다. 여기는 꼰대 문화 없고, 서열 따위 없다. 주식만 잘 벌면 된다.</p>
+            </div>
+            <div class="brutal-box">
+                <h3>예약 필수?</h3>
+                <p>주말은 필수다. 평일은 워크인 가능하지만, 브로들 사이에선 예약이 매너다. 전화 010-6279-0862로 바로 잡아라.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>연락처 & 예약</h2>
+            <div style="text-align: center; padding: 40px 0;">
+                <p>주식으로 번 돈, 여기서 털어라. <br>지금 바로 전화해서 브로들의 전장에 합류하라.</p>
+                <a href="tel:01062790862" class="tel-link" style="margin-top: 20px;">010-6279-0862</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>화곡 셔츠룸 | 마포 브로들의 전장</p>
+            <p>주식투자로 번 돈, 가장 시원하게 쓰는 방법</p>
+            <p>© 2024 화곡 셔츠룸. All rights reserved. 브로들만을 위해.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
